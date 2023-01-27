@@ -1,0 +1,15 @@
+.logo{
+    text-decoration: none;
+    color: $dark-color;
+    font-size: 36px;
+    font-weight: $fw-bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    svg{
+        width: 56px;
+        height: 56px;
+        fill: #2196F3;
+    }
+}

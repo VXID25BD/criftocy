@@ -1,0 +1,26 @@
+.advantages{
+    .container{
+        display: flex;
+        align-items: top;
+        justify-content: space-between;
+    }
+    &__img{
+        margin-bottom: 16px;
+        width: 95px;
+        height: 95px;
+        background-color: #fff;
+        border-radius: 16px;
+        border: 2px solid rgba(#448FFF, 4%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img{
+            width: 71px;
+            height: 71px;
+        }
+    }
+    &__col{
+        flex: 0 1 333px;
+    }
+}

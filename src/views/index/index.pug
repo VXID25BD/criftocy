@@ -1,7 +1,13 @@
+include ../../components/ui/button/button.pug
+
 html
-    head 
+    head
+        link(href=require("../../assets/styles/styles.scss") rel="stylesheet")
         title Webpack + Pug 2023
     body
         .root 
-            include header.pug
-        script(src="../../main.js") 
+            include ../../components/header/header.pug
+            main.page
+                include ../../components/hero/hero.pug
+                include ../../components/advantages/advantages.pug
+        script(src=require("./main.js")) 
