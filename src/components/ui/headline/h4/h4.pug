@@ -1,2 +1,7 @@
-mixin h4(text)
-    h4(class="h4")= text
+mixin h4(texts)
+    h4(class="h4")
+        each text in texts
+            if text.color === null
+                span= text.text + " "
+            else
+                span(class=String(text.color))= text.text + " "

@@ -36,6 +36,9 @@ h6{font-size: 20px;}
 ._fw-m{font-weight: $fw-medium;}
 ._fw-sb{font-weight: $fw-semibold;}
 ._fw-b{font-weight: $fw-bold;}
+/* COLOR */
+._c-r{color: $color-red;}
+._c-b{color: $color-blue-primary;}
 
 /* COMPONENTS */
 @import "../../components/header/menu/menu.scss";
@@ -45,6 +48,7 @@ h6{font-size: 20px;}
 @import "../../components/header/header.scss";
 @import "../../components/hero/hero.scss";
 @import "../../components/advantages/advantages.scss";
+@import "../../components/live/live.scss";
 
 /* UI */
 @import "../../components/ui/headline/h1/h1.scss";
