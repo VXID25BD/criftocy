@@ -4,6 +4,7 @@
 
 body{
     font-family: $ff-primary;
+    background-color: #FBFBFB;
 }
 h1, h2, h3, h4, h5, h6 {
     font-weight: $fw-bold;
@@ -11,8 +12,9 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 60px;
 }
 
-.root{
-    background-color: #FBFBFB;
+.outer{
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 h2{font-size: 56px;}

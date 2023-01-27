@@ -1,7 +1,6 @@
 .advantages{
     .container{
         display: flex;
-        align-items: top;
         justify-content: space-between;
     }
     &__img{
@@ -22,5 +21,35 @@
     }
     &__col{
         flex: 0 1 333px;
+        
+        h5 {margin-bottom: 16px;}
+        p {
+            font-size: 14px;
+            font-weight: $fw-medium;
+            color: $second-dark-color;
+        }
+    }
+}
+
+@media (max-width: $point-xl) {
+    .advantages{
+        .container{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__col{
+            max-width: 350px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+@media (max-width: $point-sm) {
+    .advantages{
+        &__col{ max-width: 228px; }
     }
 }
