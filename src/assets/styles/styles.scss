@@ -6,6 +6,7 @@ body{
     font-family: $ff-primary;
     background-color: #FBFBFB;
 }
+
 h1, h2, h3, h4, h5, h6 {
     font-weight: $fw-bold;
     color: $dark-color;
@@ -28,6 +29,13 @@ h6{font-size: 20px;}
     max-width: 1330px;
     margin: 0 auto;
 }
+
+/* MODS */
+/* TEXT */
+/* WEIGHT */
+._fw-m{font-weight: $fw-medium;}
+._fw-sb{font-weight: $fw-semibold;}
+._fw-b{font-weight: $fw-bold;}
 
 /* COMPONENTS */
 @import "../../components/header/menu/menu.scss";
