@@ -45,3 +45,23 @@ h6{font-size: 20px;}
 @import "../../components/header/header.scss";
 @import "../../components/hero/hero.scss";
 @import "../../components/advantages/advantages.scss";
+
+/* UI */
+@import "../../components/ui/headline/h1/h1.scss";
+@import "../../components/ui/headline/h2/h2.scss";
+@import "../../components/ui/headline/h3/h3.scss";
+@import "../../components/ui/headline/h4/h4.scss";
+@import "../../components/ui/headline/h5/h5.scss";
+@import "../../components/ui/headline/h6/h6.scss";
+
+@import "../../components/ui/body/b1/b1.scss";
+@import "../../components/ui/body/b2/b2.scss";
+@import "../../components/ui/body/b3/b3.scss";
+@import "../../components/ui/body/b4/b4.scss";
+
+@import "../../components/ui/captions/c1/c1.scss";
+@import "../../components/ui/captions/c2/c2.scss";
+
+@import "../../components/ui/subtitles/t1/t1.scss";
+@import "../../components/ui/subtitles/t2/t2.scss";
+@import "../../components/ui/subtitles/t3/t3.scss";
