@@ -1,0 +1,123 @@
+.product-roadmap{
+    padding-bottom: 150px;
+
+    .h2{
+        text-align: center;
+        margin-bottom: 32px;
+    }
+    &__roadmap{
+        display: flex;
+        flex-direction: column;
+    }
+    &__step{
+        display: flex;
+        position: relative;
+
+        &:nth-last-child(1)::before{
+            height: 70%;
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 50%;
+            transform: translateX(-50%);
+            height: 100%;
+            width: 2px;
+            background-color: $second-dark-color;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            top: 70px;
+            right: 49%;
+            width: 28px;
+            height: 28px;
+            background-color: $color-blue-primary;
+            border-radius: 50%;
+        }
+        &:nth-child(even){
+            justify-content: end;
+            .product-roadmap__card{
+                text-align: left;
+                .pointer {
+                    position: relative;
+        
+                    span{
+                        position: absolute;
+                        top: 30px;
+                        right: 60px;
+                        display: inline-block;
+                        border: 28px solid transparent;
+                        border-right: 28px solid #fff;
+                        z-index: 3;
+                    }
+                    &::before {
+                        content: '';
+                        display: inline-block;
+                        position: absolute;
+                        top: 28px;
+                        right: 72px;
+                        border: 30px solid transparent;
+                        border-right: 30px solid #CFE7F9;
+                        z-index: 1;
+                    }
+                    &::after {
+                        content: '';
+                        display: inline-block;
+                        position: absolute;
+                        top: 28px;
+                        right: 61px;
+                        border: 30px solid transparent;
+                        border-right: 30px solid $color-blue-primary;
+                        z-index: 2;
+                    }
+                }
+            }
+        }
+    }
+    &__card{
+        text-align: right;
+        width: 500px;
+        padding: 25px 25px 25px 60px;
+        border: 2px solid $color-blue-primary;
+        box-shadow: 0px 0px 0px 10px #CFE7F9;
+        position: relative;
+
+        .t1{margin-bottom: 10px;}
+
+        .pointer {
+            position: relative;
+
+            span{
+                position: absolute;
+                top: 30px;
+                right: -81px;
+                display: inline-block;
+                border: 28px solid transparent;
+                border-left: 28px solid #fff;
+                z-index: 3;
+            }
+            &::before {
+                content: '';
+                display: inline-block;
+                position: absolute;
+                top: 28px;
+                right: -97px;
+                border: 30px solid transparent;
+                border-left: 30px solid #CFE7F9;
+                z-index: 1;
+            }
+            &::after {
+                content: '';
+                display: inline-block;
+                position: absolute;
+                top: 28px;
+                right: -86px;
+                border: 30px solid transparent;
+                border-left: 30px solid $color-blue-primary;
+                z-index: 2;
+            }
+        }
+    }
+}
