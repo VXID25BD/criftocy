@@ -1,0 +1,29 @@
+.bridge{
+    &__body{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__content{
+        flex: 0 1 620px;
+        .h4{
+            max-width: 380px;
+            margin-bottom: 24px;
+        }
+        p{
+            line-height: 140%;
+            font-size: 20px;
+            color: $second-dark-color;
+
+            span{color: $dark-color;}
+        }
+    }
+
+
+    ul{
+        padding-left: 30px;
+        margin-bottom: 70px;
+
+        li{list-style: disc;}
+    }
+}
