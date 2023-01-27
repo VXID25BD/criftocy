@@ -1,15 +1,25 @@
 .bridge{
+    padding-bottom: 150px;
+    
     &__body{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-bottom: 100px;
     }
+
+    &__start-traiding {
+        display: flex;
+        justify-content: center;
+    }
+
     &__content{
         flex: 0 1 620px;
         .h4{
             max-width: 380px;
             margin-bottom: 24px;
         }
+
         p{
             line-height: 140%;
             font-size: 20px;
@@ -18,7 +28,6 @@
             span{color: $dark-color;}
         }
     }
-
 
     ul{
         padding-left: 30px;
