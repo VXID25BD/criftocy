@@ -37,6 +37,7 @@ h6{font-size: 20px;}
 ._fw-sb{font-weight: $fw-semibold;}
 ._fw-b{font-weight: $fw-bold;}
 /* COLOR */
+._c-w{color: $color-light-primary}
 ._c-r{color: $color-red;}
 ._c-b{color: $color-blue-primary;}
 
@@ -53,6 +54,8 @@ h6{font-size: 20px;}
 @import "../../components/we-pioneer/we-pioneer.scss";
 @import "../../components/product-roadmap/product-roadmap.scss";
 @import "../../components/shares/shares.scss";
+@import "../../components/join/join.scss";
+@import "../../components/subscribe/subscribe.scss";
 
 /* UI */
 @import "../../components/ui/headline/h1/h1.scss";

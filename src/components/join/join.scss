@@ -1,0 +1,23 @@
+.join{
+    background-color: $dark-color;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    .button{
+        background-color: $color-light-primary;
+        color: $dark-color;
+    }
+    .h4{
+        color: $color-light-primary;
+        margin-bottom: 13px;
+    }
+    .t2{
+        color: $color-light-secondary;
+        margin-bottom: 36px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
