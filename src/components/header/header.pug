@@ -2,5 +2,8 @@ header.header.outer
     .container 
         +logo()
         .header__body
-            include ./menu/menu.pug
-            +button("Contact US", ["_sm"])
+            button.burger__button 
+                span
+            .burger__body
+                include ./menu/menu.pug
+                +button("Contact US", "_sm")
