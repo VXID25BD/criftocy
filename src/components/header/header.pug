@@ -1,6 +1,6 @@
 header.header.outer 
     .container 
-        include ../logo/logo.pug
+        +logo()
         .header__body
             include ./menu/menu.pug
             +button("Contact US", ["_sm"])
