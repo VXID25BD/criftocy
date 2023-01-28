@@ -1,0 +1,21 @@
+section.shares.outer 
+    .container
+        .shares__header
+            +h4([{text: "Introducing Fractional Shares", color: null}])
+            +t1("Invest in thousands of stocks with as little as $1.", "_fw-m")
+        .shares__body 
+            .shares__col 
+                .shares__img 
+                    img(src=require("../../assets/images/shares/buy-crypto.png"), alt="Buy crypto")
+                +h5("Invest Any Amount")
+                +t3("Choose how much you want to invest, and we’ll convert from dollars to parts of a whole share.", "_fw-m")
+            .shares__col 
+                .shares__img 
+                    img(src=require("../../assets/images/shares/profile.png"), alt="Profile")
+                +h5("Build a Balanced Portfolio")
+                +t3("Customize your portfolio with pieces of different companies and funds to help reduce risk.", "_fw-m")
+            .shares__col 
+                .shares__img 
+                    img(src=require("../../assets/images/shares/clock.png"), alt="Clock")
+                +h5("Trade in Real Time")
+                +t3("Trades placed during market hours are executed at that time, so you’ll always know the share price.", "_fw-m")

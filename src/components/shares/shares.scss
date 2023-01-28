@@ -1,0 +1,35 @@
+.shares{
+    background-color: #EAF3FA;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+    &__header{
+        border-bottom: 1px solid $dark-color;
+        .h4{margin-bottom: 14px;}
+        padding-bottom: 50px;
+        margin-bottom: 100px;
+    }
+    &__body{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__col{
+        flex: 0 1 370px;
+        .h5{margin-bottom: 16px;}
+    }
+    &__img{
+        margin-bottom: 16px;
+        border-radius: 50px;
+        background-color: $dark-color;
+        width: 64px;
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img{
+            max-width: 100%;
+        }
+    }
+}
