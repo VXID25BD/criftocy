@@ -1,7 +1,9 @@
 .hero{
-    padding: 65px;
+    padding-top: 65px;
     padding-bottom: 130px;
     position: relative;
+    overflow-x: hidden;
+    
     .container{
         display: flex;
         align-items: center;
@@ -28,5 +30,37 @@
         bottom: -300px;
         background: url("../../assets/images/hero-decor.png") center center/cover no-repeat;
         z-index: -10;
+    }
+}
+
+@media (max-width: $point-xl) {
+    .hero{
+        padding-top: 25px;
+        padding-bottom: 40px;
+        
+        &::before{display: none;}
+
+        .container{
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .offer{
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: $point-sm) {
+    .hero{
+        .offer{
+            max-width: 320px;
+            .h1{
+                font-size: 36px;
+                margin-bottom: 16px;
+            }
+            .t1{font-size: 14px;}
+        }
     }
 }

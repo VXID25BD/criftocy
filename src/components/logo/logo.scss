@@ -13,3 +13,14 @@
         fill: #2196F3;
     }
 }
+
+@media (max-width: $point-sm) {
+    .logo{
+        font-size: 20px;
+
+        svg{
+            width: 28px;
+            height: 28px;
+        }
+    }
+}
