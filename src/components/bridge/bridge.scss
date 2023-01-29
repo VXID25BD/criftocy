@@ -31,16 +31,6 @@
         justify-content: center;
     }
 
-    // &__content{
-    //     flex: 0 1 620px;
-    //     .h4{
-    //         max-width: 380px;
-    //         margin-bottom: 24px;
-    //     }
-
- 
-    // }
-
     ul{
         padding-left: 30px;
         margin-bottom: 70px;
@@ -51,11 +41,38 @@
 
 @media (max-width: $point-xl) {
     .bridge{
-        &__header{
+        &__wrapper{
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            margin-bottom: 20px;
         }
         &__content{
+            order: 2;
+            gap: 32px;
         }
         &__img{
+            order: 1;
+            img{max-width: 100%;}
         }
+        ul{margin-bottom: 24px;}
+    }
+}
+
+@media (max-width: $point-md) {
+    .bridge{
+        padding-bottom: 120px;
+        .h4{font-size: 28px;}
+        .t1{font-size: 18px;}
+        p{font-size: 16px;}
+    }
+}
+
+@media (max-width: $point-sm) {
+    .bridge{
+        padding-bottom: 60px;
+        .h4{font-size: 20px;}
+        .t1{font-size: 16px;}
+        p{font-size: 14px;}
     }
 }

@@ -15,11 +15,18 @@
     .t1{font-size: 18px;}
 }
 
+@media (max-width: $point-xl) {
+    .live{
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+}
+
 @media (max-width: $point-sm) {
     .live{
         padding-top: 40px;
         padding-bottom: 40px;
-        
+
         .container{
             max-width: 320px;
         }
