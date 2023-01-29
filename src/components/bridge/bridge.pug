@@ -1,24 +1,25 @@
 section.bridge.outer 
     .container 
-        .bridge__header
-            +h4([{text: "Criftocy Bridge", color: "_c-b"}])
-            +h4([{text: "Fast & Cheep Connection to Artbitrum Layar", color: null}])
-        .bridge__body 
+        .bridge__wrapper
             .bridge__content
-                +h4([
-                    {text: "$1000", color: "_c-b"},
-                    {text: "worth of", color: null},
-                    {text: "Crifrocy $CT tokens!", color: "_c-b"},
-                    ])
-                ul
-                    li 
-                        +t1("Like this tweet", "_fw-sb")
-                    li 
-                        +t1("Re-tweet with #DeGate #Layer2", "_fw-sb")
-                    li 
-                        +t1("Tag three friends in it", "_fw-sb")
-                p(class="_fw-m") Criftocy will award 50 winners randomly with $20 warth of SDG tokens. 
-                    span(class="_fw-sb") Deadline : 10 Oct 00:00UTC
+                .bridge__header
+                    +h4([{text: "Criftocy Bridge", color: "_c-b"}])
+                    +h4([{text: "Fast & Cheep Connection to Artbitrum Layar", color: null}])
+                .bridge__body
+                    +h4([
+                        {text: "$1000", color: "_c-b"},
+                        {text: "worth of", color: null},
+                        {text: "Crifrocy $CT tokens!", color: "_c-b"},
+                        ])
+                    ul
+                        li 
+                            +t1("Like this tweet", "_fw-sb")
+                        li 
+                            +t1("Re-tweet with #DeGate #Layer2", "_fw-sb")
+                        li 
+                            +t1("Tag three friends in it", "_fw-sb")
+                    p(class="_fw-m") Criftocy will award 50 winners randomly with $20 warth of SDG tokens. 
+                        span(class="_fw-sb") Deadline : 10 Oct 00:00UTC
             .bridge__img 
                 img(src=require("../../assets/images/bridge-img.png"), alt="img")
         .bridge__start-traiding 

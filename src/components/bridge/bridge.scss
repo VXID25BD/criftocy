@@ -1,25 +1,23 @@
 .bridge{
     padding-bottom: 150px;
     
-    &__body{
+    &__wrapper{
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 100px;
+        align-items: flex-end;
+        margin-bottom: 90px;
     }
-
-    &__start-traiding {
-        display: flex;
-        justify-content: center;
-    }
-
     &__content{
-        flex: 0 1 620px;
-        .h4{
-            max-width: 380px;
-            margin-bottom: 24px;
-        }
+        display: flex;
+        flex-direction: column;
+        gap: 120px;
+    }
+    &__body{
+        max-width:630px;
 
+        .h4{
+            margin-bottom: 24px;
+            max-width: 340px;
+        }
         p{
             line-height: 140%;
             font-size: 20px;
@@ -28,11 +26,36 @@
             span{color: $dark-color;}
         }
     }
+    &__start-traiding {
+        display: flex;
+        justify-content: center;
+    }
+
+    // &__content{
+    //     flex: 0 1 620px;
+    //     .h4{
+    //         max-width: 380px;
+    //         margin-bottom: 24px;
+    //     }
+
+ 
+    // }
 
     ul{
         padding-left: 30px;
         margin-bottom: 70px;
 
         li{list-style: disc;}
+    }
+}
+
+@media (max-width: $point-xl) {
+    .bridge{
+        &__header{
+        }
+        &__content{
+        }
+        &__img{
+        }
     }
 }
