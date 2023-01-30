@@ -8,14 +8,8 @@
     &__roadmap{
         display: flex;
         flex-direction: column;
-    }
-    &__step{
-        display: flex;
         position: relative;
-
-        &:nth-last-child(1)::before{
-            height: 70%;
-        }
+        padding-top: 100px;
         &::before{
             content: "";
             position: absolute;
@@ -24,8 +18,17 @@
             transform: translateX(-50%);
             height: 100%;
             width: 2px;
-            background-color: $second-dark-color;
+            background-color: rgba($second-dark-color, 15%);
         }
+    }
+    &__step{
+        display: flex;
+        position: relative;
+
+        &:nth-last-child(1)::before{
+            height: 70%;
+        }
+
         &::after{
             content: "";
             position: absolute;
@@ -36,41 +39,26 @@
             background-color: $color-blue-primary;
             border-radius: 50%;
         }
+
         &:nth-child(even){
             justify-content: end;
             .product-roadmap__card{
                 text-align: left;
-                .pointer {
-                    position: relative;
-        
+                .pointer {        
                     span{
-                        position: absolute;
-                        top: 30px;
                         right: 60px;
-                        display: inline-block;
                         border: 28px solid transparent;
                         border-right: 28px solid #fff;
-                        z-index: 3;
                     }
                     &::before {
-                        content: '';
-                        display: inline-block;
-                        position: absolute;
-                        top: 28px;
                         right: 72px;
                         border: 30px solid transparent;
                         border-right: 30px solid #CFE7F9;
-                        z-index: 1;
                     }
                     &::after {
-                        content: '';
-                        display: inline-block;
-                        position: absolute;
-                        top: 28px;
                         right: 61px;
                         border: 30px solid transparent;
                         border-right: 30px solid $color-blue-primary;
-                        z-index: 2;
                     }
                 }
             }
@@ -118,6 +106,56 @@
                 border-left: 30px solid $color-blue-primary;
                 z-index: 2;
             }
+        }
+    }
+}
+
+@media (max-width: $point-xl) {
+    .product-roadmap{
+        &__roadmap{
+            gap: 50px;
+            padding-top: 20px;
+
+            &::before{
+                top: -8%;
+                height: 108%;
+                right: 0;
+                transform: translateX(0);
+            }
+        }
+
+        &__step{
+            &::after{
+                right: -12.5px;
+            }
+            &:nth-child(even){
+                justify-content: start;
+                .product-roadmap__card{
+                    width: 100%;
+                    text-align: right;
+                    .pointer {
+                        span{
+                            right: -81px;
+                            border: 28px solid transparent;
+                            border-left: 28px solid #fff;
+                        }
+                        &::before {
+                            right: -97px;
+                            border: 30px solid transparent;
+                            border-left: 30px solid #CFE7F9;
+                        }
+                        &::after {
+                            right: -86px;
+                            border: 30px solid transparent;
+                            border-left: 30px solid $color-blue-primary;
+                        }
+                    }
+                }
+            }
+        }
+        .product-roadmap__card{
+            width: 100%;
+            margin-right: 100px;
         }
     }
 }
