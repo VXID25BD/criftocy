@@ -45,19 +45,17 @@
             .product-roadmap__card{
                 text-align: left;
                 .pointer {        
+                    span,&::before,&::after{border: 30px solid transparent;}
                     span{
-                        right: 60px;
-                        border: 28px solid transparent;
-                        border-right: 28px solid #fff;
+                        right: 59px;
+                        border-right: 30px solid #fff;
                     }
                     &::before {
-                        right: 72px;
-                        border: 30px solid transparent;
+                        right: 71px;
                         border-right: 30px solid #CFE7F9;
                     }
                     &::after {
                         right: 61px;
-                        border: 30px solid transparent;
                         border-right: 30px solid $color-blue-primary;
                     }
                 }
@@ -76,33 +74,26 @@
 
         .pointer {
             position: relative;
-
-            span{
+            span,&::before,&::after{
                 position: absolute;
-                top: 30px;
-                right: -81px;
                 display: inline-block;
-                border: 28px solid transparent;
-                border-left: 28px solid #fff;
+                border: 30px solid transparent;
+                top: 30px;
+            }
+            &::before,&::after{content: ''}
+            span{
+
+                right: -83px;
+                border-left: 30px solid #fff;
                 z-index: 3;
             }
             &::before {
-                content: '';
-                display: inline-block;
-                position: absolute;
-                top: 28px;
-                right: -97px;
-                border: 30px solid transparent;
+                right: -95px;
                 border-left: 30px solid #CFE7F9;
                 z-index: 1;
             }
             &::after {
-                content: '';
-                display: inline-block;
-                position: absolute;
-                top: 28px;
-                right: -86px;
-                border: 30px solid transparent;
+                right: -85px;
                 border-left: 30px solid $color-blue-primary;
                 z-index: 2;
             }
@@ -134,19 +125,17 @@
                     width: 100%;
                     text-align: right;
                     .pointer {
+                        span, &::before, &::after{border: 30px solid transparent;}
                         span{
-                            right: -81px;
-                            border: 28px solid transparent;
-                            border-left: 28px solid #fff;
+                            right: -83px;
+                            border-left: 30px solid #fff;
                         }
                         &::before {
-                            right: -97px;
-                            border: 30px solid transparent;
+                            right: -95px;
                             border-left: 30px solid #CFE7F9;
                         }
                         &::after {
-                            right: -86px;
-                            border: 30px solid transparent;
+                            right: -85px;
                             border-left: 30px solid $color-blue-primary;
                         }
                     }
@@ -156,6 +145,67 @@
         .product-roadmap__card{
             width: 100%;
             margin-right: 100px;
+        }
+    }
+}
+
+@media (max-width: $point-sm) {
+    .product-roadmap{
+        .h2{font-size: 28px;}
+
+        &__step{
+            &:nth-child(even){
+                .product-roadmap__card{
+                    .pointer {
+                        span,&::before,&::after{
+                            top: 15px;
+                            border: 15px solid transparent;
+                        }
+                        span{
+                            right: -40px;
+                            border-left: 15px solid #fff;
+                        }
+                        &::before {
+                            right: -46px;
+                            border-left: 15px solid #CFE7F9;
+                        }
+                        &::after { 
+                            right: -41px;
+                            border-left: 15px solid $color-blue-primary;
+                        }
+                    }
+                }
+            }
+        }
+        &__card{
+            padding: 10px 10px 10px 15px;
+            border: 1px solid $color-blue-primary;
+            box-shadow: 0px 0px 0px 5px #CFE7F9;
+            .t1{
+                font-weight: $fw-bold;
+                font-size: 14px;
+            }
+            .t2{font-size: 12px;}
+            .pointer {
+                span,&::before,&::after{
+                    top: 15px;
+                    border: 15px solid transparent;
+                }
+                span{
+                    right: -40px;
+                    border-left: 15px solid #fff;
+                }
+                &::before {
+                    content: '';
+                    right: -46px;
+                    border-left: 15px solid #CFE7F9;
+                }
+                &::after {
+                    content: '';
+                    right: -41px;
+                    border-left: 15px solid $color-blue-primary;
+                }
+            }
         }
     }
 }
